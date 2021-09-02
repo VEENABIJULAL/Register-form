@@ -1,0 +1,36 @@
+<div class="container" id="body1">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="main">
+                <h4>Welcome to Registration Page 
+                </h4><br>
+            <form [formGroup]="registerForm" (ngSubmit)="register()">
+            <!--input field for first name-->
+            <input type="text" placeholder="First Name"  class="text" name="fname" formControlName="fname" ><br>
+            <div class="error"  *ngIf="(registerForm.get('fname')?.touched || registerForm.get('fname')?.dirty) && registerForm.get('fname')?.errors">Invalid Firstname</div><br>
+            <!--input field for last name-->
+            <input type="text" placeholder="Last Name"  class="text" name="lname" formControlName="lname" ><br>
+            <div class="error"  *ngIf="(registerForm.get('lname')?.touched || registerForm.get('lname')?.dirty) && registerForm.get('lname')?.errors">Invalid Lastname</div><br>
+            <!--input field for email-->
+            <input type="email" placeholder="Email"  class="text" name="emails" formControlName="emails" ><br>
+            <div class="error"  *ngIf="(registerForm.get('emails')?.touched || registerForm.get('emails')?.dirty) && registerForm.get('emails')?.errors">Invalid email</div><br>
+            <!--input field for phone-->
+            <input type="text" placeholder="Phone Number"  class="text" name="phone" formControlName="phone" ><br>
+            <div class="error"  *ngIf="(registerForm.get('phone')?.touched || registerForm.get('phone')?.dirty) && registerForm.get('phone')?.errors">Invalid phone number</div><br>
+            <!--input field for passworde-->
+            <input type="password" placeholder="Password" class="text" name="pswd" formControlName="pswd"><br>
+            <div class="error"  *ngIf="(registerForm.get('pswd')?.touched || registerForm.get('pswd')?.dirty) && registerForm.get('pswd')?.errors">Invalid password</div><br>
+            <!--submit button-->
+            <input type="submit" value="Register" class="button butefct"><br><br>   
+            
+            </form>    
+            
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+
+

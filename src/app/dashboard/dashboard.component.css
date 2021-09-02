@@ -1,0 +1,62 @@
+/*style for heading*/
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+/*style for table*/
+table {
+    width: 60%;
+    
+    border-collapse: collapse;
+    margin: 25px 275px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0  20px rgba(0, 0, 0, 0.15);
+  }
+  table thead tr{
+      background-color: rgb(182, 233, 213);
+      color: #000;text-align: left;
+      font-weight: bold;
+      height: 80px;
+
+  }
+  table thead tr th{
+      padding-left: 25px ;
+  }
+  table tr {
+    color: #000;text-align: left;
+    font-weight: bold;
+    height: 80px;
+  }
+  table tr th{
+    padding-left: 25px ;
+}
+/*style for link*/
+.btn{
+   margin-left: 40%;
+   margin-top: 5%;
+   color: white;
+   font-size: 25px;
+    
+}
+/*media quires*/
+@media only screen and (max-width: 600px) {
+    table {
+      margin: 35px;
+      width: 90%;
+    }.btn{
+        margin-left: 20%;
+    }
+  }
+  @media (min-width:600px) and (max-width: 768px) {
+    table {
+        margin: 35px;
+        width: 90%;
+      }.btn{
+          margin-left: 30%;
+      }
+  }
+ 
